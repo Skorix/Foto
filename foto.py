@@ -4,10 +4,10 @@ import shutil
 
 # Получаем список фотографий из указанной папки
 # Папка должна лежать рядом с этим скриптом
-directory = 'Фотоархив/'
+directory = 'C:\Users\Skorix\Pictures\Фотоархив'
 files = os.listdir(directory)
 files2 = filter(lambda x: x.endswith('.jpg') or x.endswith('.JPG') or x.endswith('.png') or x.endswith('.jpeg'), files) 
-os.chdir('Фотоархив/')
+os.chdir('C:\Users\Skorix\Pictures\Фотоархив')
 
 # Перебираем каждый файл из списка фото и вытаскиваем из его EXIF дату фотографирования
 for x in files2:
