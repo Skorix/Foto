@@ -75,5 +75,4 @@ for x in files2:
             # Копируем фотку в папку и удаляем оригинал 
       
         shutil.copyfile(x, g[0:4] + "/" + zz+ '/' + g[8:10] + '/' + x)
-        
         os.remove(x)
