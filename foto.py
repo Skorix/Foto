@@ -25,8 +25,7 @@ for x in files2:
                 for tag in kartinka[i]:
                     # Нам нужны EXIF теги DateTime и DateTimeOriginal
                     if((piexif.TAGS[i][tag]["name"]=="DateTime") or ((piexif.TAGS[i][tag]["name"]=="DateTimeOriginal"))):
-                        qq=kartinka[i][tag]
-                            
+                        qq=kartinka[i][tag]                
     
         if(qq==None):
             # Еcли в EXIF нет даты то имя папки будет 0000
