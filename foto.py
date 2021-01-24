@@ -69,7 +69,7 @@ for x in files2:
 
         if (os.path.exists(g[0:4] + "/" + zz + '/' + g[8:10]) != True):
             os.makedirs(os.path.join(g[0:4], zz, g[8:10] ))
-            # Копируем фотку в папку и удаляем оригинал 
-      
+            
+        # Копируем фотку в папку и удаляем оригинал 
         shutil.copyfile(x, g[0:4] + "/" + zz+ '/' + g[8:10] + '/' + x)
         os.remove(x)
